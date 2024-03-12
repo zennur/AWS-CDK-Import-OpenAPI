@@ -164,17 +164,6 @@ class API(Construct):
             self.authorizer,
         )
 
-        # api_key_string = str(secrets.token_urlsafe(32))
-        # api_key = apigateway.ApiKey(
-        #     self,
-        #     "ApiKey" + random_attachment_id,
-        #     api_key_name="SeccuaPPApiKey" + random_attachment_id,
-        #     enabled=True,
-        #     value=api_key_string,
-        # )
-        # api_key.apply_removal_policy(RemovalPolicy.DESTROY)
-
-
         api_plan = api.add_usage_plan("APIUsagePlan")
         # api_plan.add_api_key(api_key)
 
