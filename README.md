@@ -5,8 +5,11 @@ This repository contains a Python module that automates the creation of AWS infr
 
 ### Features
 <b> Automatic Lambda Function Creation: </b> Generates AWS Lambda functions for each endpoint defined in the OpenAPI specification.
+
 <b> API Gateway Integration: </b> Sets up an API Gateway that routes requests to the corresponding Lambda functions.
+
 <b> Flexible Deployment: </b> Integrates with AWS IAM, S3, Cognito, CloudFront, and other AWS services to provide a comprehensive and secure environment.
+
 <b> Customizable: </b> Allows for custom configurations of Lambda functions and API Gateway settings.
 
 ### Prerequisites
@@ -34,9 +37,11 @@ pip install -r requirements.txt
 ```
 
 ### Usage
-<b> Prepare Your OpenAPI Specification: <b> Ensure your OpenAPI YAML file is ready and located within your project directory.
-<b> Configure the CDK Stack: <b> Modify the API class within the api.py file to customize the AWS environment according to your needs.
-<b> Deploy: <b> Run the following commands to deploy your infrastructure to AWS:
+<b> Prepare Your OpenAPI Specification: </b> Ensure your OpenAPI YAML file is ready and located within your project directory.
+
+<b> Configure the CDK Stack: </b> Modify the API class within the api.py file to customize the AWS environment according to your needs.
+
+<b> Deploy: </b> Run the following commands to deploy your infrastructure to AWS:
 ```shell
 cdk bootstrap
 cdk deploy
@@ -44,8 +49,11 @@ cdk deploy
 
 ### API Class Reference
 create_lambda_function: Creates a Lambda function based on parameters such as function name, Lambda layer, IAM role, and environment variables.
+
 create_api_gateway: Sets up the API Gateway resources and methods defined in your OpenAPI specification file.
+
 get_or_create_resource: Helper function to create or retrieve API Gateway resources.
+
 get_or_create_lambda: Helper function to create or retrieve Lambda functions if they don't already exist.
 
 ### Contributing
